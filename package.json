@@ -20,8 +20,10 @@
   "dependencies": {
     "axios": "^0.19.1",
     "dotenv": "^8.2.0",
+    "electron": "^7.1.8",
     "electron-html-to": "^2.6.0",
     "fs": "0.0.1-security",
-    "inquirer": "^7.0.3"
+    "inquirer": "^7.0.3",
+    "install": "^0.13.0"
   }
 }

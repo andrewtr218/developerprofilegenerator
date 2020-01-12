@@ -1,0 +1,27 @@
+{
+  "name": "developerprofilegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewtr218/developerprofilegenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewtr218/developerprofilegenerator/issues"
+  },
+  "homepage": "https://github.com/andrewtr218/developerprofilegenerator#readme",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "dotenv": "^8.2.0",
+    "electron-html-to": "^2.6.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.0.3"
+  }
+}

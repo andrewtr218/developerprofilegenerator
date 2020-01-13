@@ -24,6 +24,8 @@
     "electron-html-to": "^2.6.0",
     "fs": "0.0.1-security",
     "inquirer": "^7.0.3",
-    "install": "^0.13.0"
+    "install": "^0.13.0",
+    "open": "^7.0.0",
+    "path": "^0.12.7"
   }
 }

@@ -1,8 +1,25 @@
 const fs = require("fs")
 const inquirer = require("inquirer");
 const axios = require("axios");
-const convertFactory = require("electron-html-to")
+const convertFactory = require("electron-html-to");
 require("dotenv").config();
+
+const path = require("path");
+const open = require("open");
+
+
+const conversion = convertFactory({
+    convertPath: convertFactory.converters.pdf
+});
+
+// conversion({ html: $html}, function (err, result) {
+//     if (err){
+//         return console.log(err);
+//     }
+//     console.log(result.numberOfPages);
+//     console.log(results.logs);
+//     result.stream.pipe(fs.createWriteStream('./devProfile.pdf'))
+// })
 
 const questions = [
     {
@@ -93,13 +110,22 @@ function dataPick(data, data2, q2){
             if (err) throw err;
             console.log("Error in writefile")
         })
+            conversion({ html: $html}, function (err, result) {
+                if (err){
+                    return console.log("Error in conversion");
+                }
+                console.log(result.numberOfPages);
+                console.log(results.logs);
+                result.stream.pipe(fs.createWriteStream('./devProfile.pdf'))
+            })
+        
         //     conversion({ html: $html }, (err, result) => {
         //         if (err) return console.log("Error in conversion");
         //         result.stream.pipe(fs.createWriteStream('./devProfile.pdf'));
         //         conversion.kill();
             
-        // })
-}
+        }
+// }
 
 // const conversion = convertFactory({
 //     converterPath: convertFactory.converters.PDF,
